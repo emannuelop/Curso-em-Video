@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+
+        body {
+            background-color: rgb(105, 105, 173);
+            color: white;   /* Cometário em CSS */
+            font: normal 1.5em Arial;
+        }
+        
+        h1 {
+            color: rgb(255, 212, 22);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1> <!-- Isso é um comentário em HTML -->
+    <p>Já me livrei da maldição!!</p>
+    <script>
+        var nome = window.prompt('Seu nome?')
+        var idade = Number(window.prompt('Sua idade?'))
+        // window.alert('Prazer em conhecer '+ nome + ' você tem ' + idade +' anos')
+        window.alert(`Prazer em conhecer ${nome} você tem ${idade} anos`)
+        document.write(`${nome.toUpperCase()}`)
+    </script>
+</body>
+</html>
