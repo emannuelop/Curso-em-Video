@@ -30,11 +30,11 @@
             if(precoAt > precoAn) {
                 res.innerHTML += `<p>Hoje o preço está mais caro.</p>`
                 res.innerHTML += `<p>O preço subiu R$ ${precoAt - precoAn} em relação ao preço anterior</p>`
-                res.innerHTML += `<p>Uma variação de ${((precoAt - precoAn) / precoAn) * 100} % pra cima.</p>`
+                res.innerHTML += `<p>Uma variação de ${((precoAt - precoAn) / precoAn) * 100}&#37; pra cima.</p>`
             } else {
                 res.innerHTML += `<p>Hoje o preço está mais barato.</p>`
                 res.innerHTML += `<p>O preço subiu R$ ${precoAn - precoAt} em relação ao preço anterior</p>`
-                res.innerHTML += `<p>Uma variação de ${((precoAn - precoAt) / precoAn) * 100} % pra baixo.</p>`
+                res.innerHTML += `<p>Uma variação de ${((precoAn - precoAt) / precoAn) * 100}&#37; pra baixo.</p>`
             }
         }
     </script>
