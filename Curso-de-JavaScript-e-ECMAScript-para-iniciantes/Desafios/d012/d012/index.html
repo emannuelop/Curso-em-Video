@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preço mudou</title>
+    <style>
+
+        input {
+            width: 80px;
+            height: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Preço mudou</h1>
+    <input type="button" value="Verificar" onclick="clicou()">
+    <div id="res">
+        <p>Clique no botão acima para analisar a mudança de preço.</p>
+    </div>
+    <script>
+        var res = document.getElementById('res')
+        function clicou() {
+            var precoAn = Number(prompt('Qual era o preço anterior do produto?'))
+            var precoAt = Number(prompt('Qual é o preço atual do produto?'))
+            res.innerHTML = `<p><strong>Analisando os valores informados</strong></p>`
+            res.innerHTML += `<p>O produto custava R$ ${precoAn} e agora custa R$ ${precoAt}</p>`
+            if(precoAt > precoAn) {
+                res.innerHTML += `<p>Hoje o preço está mais caro.</p>`
+                res.innerHTML += `<p>O preço subiu R$ ${precoAt - precoAn} em relação ao preço anterior</p>`
+                res.innerHTML += `<p>Uma variação de ${((precoAt - precoAn) / precoAn) * 100} pra cima.</p>`
+            } else {
+                res.innerHTML += `<p>Hoje o preço está mais barato.</p>`
+                res.innerHTML += `<p>O preço subiu R$ ${precoAn - precoAt} em relação ao preço anterior</p>`
+                res.innerHTML += `<p>Uma variação de ${((precoAn - precoAt) / precoAn) * 100} pra baixo.</p>`
+            }
+        }
+    </script>
+</body>
+</html>

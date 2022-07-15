@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fórmula de Bhaskara</title>
+    <style>
+
+        input {
+            width: 80px;
+            height: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Resolvendo Bhaskara</h1>
+    <input type="button" value="Calcular" onclick="clicou()">
+    <div id="res">
+        <p>Considerando uma equação do formato <strong>ax<sup>2</sup></strong> + <strong>bx</strong> + <strong>c</strong> = <em>0</em>, aperte o botão acima para calcular o valor de <strong>&#9651;</strong></p>
+    </div>
+    <script>
+        var res = document.getElementById('res')
+        function clicou() {
+            var a = Number(prompt('Qual é o valor de a?'))
+            var b = Number(prompt('Qual é o valor de b?'))
+            var c = Number(prompt('Qual é o valor de c?'))
+            res.innerHTML = `<p><strong>Resolvendo Bhaskara</strong></p>`
+            res.innerHTML += `<p>A equação atual é <strong>${a}x<sup>2</sup> + ${b}x + ${0} = 0</strong></p>`
+            res.innerHTML += `<p>O valor calculado foi <strong><mark>&#9651; = ${(b*b) -4 * a * c}</mark></strong></p>`
+        }
+    </script>
+</body>
+</html>
