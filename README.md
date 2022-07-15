@@ -20,4 +20,7 @@
         <li>
             <a href="https://emannuelop.github.io/Curso-em-Video/Curso-de-JavaScript-e-ECMAScript-para-iniciantes/Modulos/Modulo-D/Exercicios/ex015/">Clique aqui para ver</a>
         </li>
+        <li>
+            <a href="https://emannuelop.github.io/Curso-em-Video/Curso-de-JavaScript-e-ECMAScript-para-iniciantes/Modulos/Modulo-F/Exercicios/ex022/">Clique aqui para ver</a>
+        </li>
     </ul>
