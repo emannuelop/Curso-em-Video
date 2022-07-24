@@ -1,5 +1,6 @@
 # Video course channel 💻
- All the courses I took from the video course channel
+ <p>All the courses I took from the video course channel</p>
+
  <p>Some of the challenges of the HTML5 and CSS3 course</p>
     <ul>
         <li>
